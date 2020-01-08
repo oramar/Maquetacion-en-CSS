@@ -5,28 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mi Blog</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/iconos.css">
     <link rel="stylesheet" href="CSS/estilo.css">
 
 </head>
 <body>
-    <header>
-        <section>
-            <div>
-                <a href="">Facebook</a>
-                <a href="">twitte</a>
-                <a href="">Instagram</a>
-                <a href="">linkedin</a>
-                <a href="">Youtube</a>
+    <header class="header">
+        <section class="header__icons-container">
+            <div class="header__icons"> 
+                <a href=""><span class="header__link icon-facebook"></span></a>
+                <a href=""><span class="header__link icon-twitter"></span></a>
+                <a href=""><span class="header__link icon-email"></span></a>
+                <a href=""><span class="header__link icon-mobile"></span></a>
+                <a href=""><span class="header__link icon-youtube"></span></a>
             </div>
         </section>
-        <nav>
-            <section>
-                <a href="">logo</a>
+        <nav class="header__navigation-container">
+            <section class="header__logo-container">
+                <a href=""><img class="header__logo" src="IMG/Logo-negro.png" alt="logo de perfil"></a>
             </section>
-            <section>
-                <a href="perfil.html">Sobre mi</a>
+            <section class="header__profile">
+                <a class="header__perfile--link" href="perfil.html">Sobre mi</a>
             </section>
         </nav>
     </header>
+
+    <main class="main">
+        <section class="main__home">
+            <h1 class="main__title">Conoce las novedades y <br> noticias del Mundo Tech</h1>
+            <a class="main-button" href="blogs.html">Entra ya!</a>
+        </section>
+    </main>
 </body>
 </html>
